@@ -12,7 +12,7 @@ const MainContainer = styled.div`
   border-radius: ${props => props.border};
   padding: 50px 75px 50px 50px;
   color: white;
-  background-color: ${props => props.color || "black"};
+  background-color: ${props => props.color || "grey"};
 `
 
 const Text = styled.span`
@@ -42,7 +42,7 @@ const Button = styled.div`
   border: 1px solid white;
   border-radius: 50px;
   background-color: white;
-  color: ${props => props.color || "black"};
+  color: ${props => props.color || "grey"};
   transition-duration: 1000ms;
 
   &:hover {
@@ -53,9 +53,6 @@ const Button = styled.div`
 `
 
 const Cards = ({detail}) => {
-
-    console.log("props: ",detail)
-
     const {type, description, color, image, border} = detail
 
     return (
